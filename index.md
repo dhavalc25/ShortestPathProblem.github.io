@@ -1,3 +1,4 @@
+
 ## Abstract:
 
 In the new corporate world, time is everything. An optimized way of working is vital. Similarly, in Computer Science an algorithm that is practical, easy and best solves the problem is necessarily not optimal if it runs in exponential time. Nevertheless, an algorithm that is more complex but solves the same problem in constant time is more valuable. Therefore, generating an optimal solution to any problem in any field is fundamental to our life. Finding the shortest path falls in the same line, being crucial to spatial analysis and wayfinding tasks. When you are driving from City A to City B using Google maps, Google maps automatically routes you to the path that takes the least time to reach the destination. This routing is based on the problem of finding the shortest path. This problem is also used to compute the shortest path on the road networks of the USA and Europe. In the field of networking, the shortest path algorithm is used to find the minimum delay. The other applications of this problem include Robotics, VLSI, and transportation. 
@@ -117,10 +118,10 @@ Although we have tried to develop an algorithm that would work in most input sce
 
 ## References:
 
-1. [1] [“Shortest Path in the Plane with Polygonal Obstacles”, James A. Storer, John H. Reif, Journal of the ACM (JACM) 5 September, 1994, pp. 982 - 1012.](https://users.cs.duke.edu/~reif/paper/movers.pdf)
-2. [2] “Computing Shortest Paths among Curved Obstacles in the Plane”, Danny Z. Chen, Haitao Wang, ACM Transactions on Algorithms, Vol. 11(4), Article No. 26, 2015.
-3. [3] “Deriving an Obstacle-Avoiding Shortest Path in Continuous Space: A Spatial Analytic Approach”, Insu Hong, Arizona State University, May 2015.
-4. [4] “Complexity of the generalized mover’s problem”, John H. Reif, 1979.
+1. [1] [“Shortest Path in the Plane with Polygonal Obstacles”, James A. Storer, John H. Reif, Journal of the ACM (JACM) 5 September, 1994, pp. 982 - 1012.](https://users.cs.duke.edu/~reif/paper/storer/shotestpathplane.pdf)
+2. [2] [“Computing Shortest Paths among Curved Obstacles in the Plane”, Danny Z. Chen, Haitao Wang, ACM Transactions on Algorithms, Vol. 11(4), Article No. 26, 2015.](https://dl.acm.org/citation.cfm?id=2660771)
+3. [3] [“Deriving an Obstacle-Avoiding Shortest Path in Continuous Space: A Spatial Analytic Approach”, Insu Hong, Arizona State University, May 2015.](https://repository.asu.edu/attachments/150616/content/Hong_asu_0010E_14943.pdf)
+4. [4] [“Complexity of the generalized mover’s problem”, John H. Reif, 1979.](https://users.cs.duke.edu/~reif/paper/movers.pdf)
 
 
 
