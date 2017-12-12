@@ -35,7 +35,7 @@ Once the polygons drawn pass through the previous validations, the user can choo
 
 The figure below indicates how the UI looks:
 
-![Image](shortestpathproblem/UI.png)
+![Image](dhavalc25/shortestpathproblem/UI.png)
 
 **2. Compute the convex hull**
 
