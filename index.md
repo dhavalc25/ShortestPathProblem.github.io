@@ -122,3 +122,5 @@ Although we have tried to develop an algorithm that would work in most input sce
 2. [2] [“Computing Shortest Paths among Curved Obstacles in the Plane”, Danny Z. Chen, Haitao Wang, ACM Transactions on Algorithms, Vol. 11(4), Article No. 26, 2015.](https://dl.acm.org/citation.cfm?id=2660771)
 3. [3] [“Deriving an Obstacle-Avoiding Shortest Path in Continuous Space: A Spatial Analytic Approach”, Insu Hong, Arizona State University, May 2015.](https://repository.asu.edu/attachments/150616/content/Hong_asu_0010E_14943.pdf)
 4. [4] [“Complexity of the generalized mover’s problem”, John H. Reif, 1979.](https://users.cs.duke.edu/~reif/paper/movers.pdf)
+
+<img src="dhavalc25.github.io/ScreenShot 2017-12-04 at 1.47.35 PM.png" alt="hi" class="inline"/>
