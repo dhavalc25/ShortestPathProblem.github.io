@@ -49,7 +49,9 @@ Movement of a one dimensional point through a bunch of two dimensional obstacles
 
 We get an inflated polygon by moving the lines representing the polygon edges above or below depending on the direction of the edge by a constant factor. If the edge was made from left vertex to the right vertex then it means that the edge is a lower edge considering that the user is inputting the vertices of an obstacle in counter-clockwise direction. So, in this case we shift the edge below. If the edge is going from a right vertex to a left vertex then it means that that edge is an upper edge and it gets moved above by a constant factor. 
 
-Once we know in which direction we are shifting an edge, we have to figure out by how much factor we to shift that edge. We have to move the edge above or below by translating the line along the normal it by a distance equal to the radius of the moving object. This is becomes complicated if we try to compute normals of each and every edge, look for a point that is at a distance of radius along the normal, and then draw a line from that point that is parallel to that edge. We can easily do this by adding or subtracting a value to the y-intercept of the line equation. The value can be found out using some trigonometry. 
+Once we know in which direction we are shifting an edge, we have to figure out by how much factor we to shift that edge. We have to move the edge above or below by translating the line along the normal it by a distance equal to the radius of the moving object. This is becomes complicated if we try to compute normals of each and every edge, look for a point that is at a distance of radius along the normal, and then draw a line from that point that is parallel to that edge. We can easily do this by adding or subtracting a value to the y-intercept of the line equation. The value can be found out using some trigonometry.
+
+![Image](dhavalc25.github.io/3.jpg)
 
 ```markdown
 First, we get the angle that the edge/line makes with the x-axis. This will also be the angle that the normal of the line makes with the y-axis.
@@ -64,8 +66,6 @@ New y-intercept = old y-intercept + value 		if, x1 < x2
 New y-intercept = old y-intercept - value 		if, x2 < x1
 
 This will add or subtract to the old y-intercept and will eventually shift the edge/line above or below with a factor of “value” along the y-axis, or with a factor of “radius” along the normal of the edge/line.
-
-![Image](dhavalc25.github.io/3.jpg)
 
 And fourth, we get the intersection points of the new shifted edges that are adjacent to each other. When we are done with finding intersection points of all the adjacent edges, we have our vertices of the inflated polygons ready. And, we do this for all obstacles in our canvas.
 ```
