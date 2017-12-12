@@ -149,7 +149,7 @@ Another major way in which we could extend this algorithm is by allowing the mov
 
 ## Source Code:
 
-Find files of our tool [here!](https://github.com/dhavalc25/CSCI716FinalProject)
+Find files of our Shortest Path tool [here!](https://github.com/dhavalc25/CSCI716FinalProject)
 
 ## References:
 
