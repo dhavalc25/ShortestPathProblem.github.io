@@ -35,7 +35,7 @@ Once the polygons drawn pass through the previous validations, the user can choo
 
 The figure below indicates how the UI looks:
 
-![Image](dhavalc25.github.io/UI.png)
+![Image](shortestpathproblem/UI.png)
 
 **2. Compute the convex hull**
 
@@ -51,7 +51,7 @@ We get an inflated polygon by moving the lines representing the polygon edges ab
 
 Once we know in which direction we are shifting an edge, we have to figure out by how much factor we to shift that edge. We have to move the edge above or below by translating the line along the normal it by a distance equal to the radius of the moving object. This is becomes complicated if we try to compute normals of each and every edge, look for a point that is at a distance of radius along the normal, and then draw a line from that point that is parallel to that edge. We can easily do this by adding or subtracting a value to the y-intercept of the line equation. The value can be found out using some trigonometry.
 
-![Image](dhavalc25.github.io/3.jpg)
+![Image](shortestpathproblem/3.jpg)
 
 ```markdown
 First, we get the angle that the edge/line makes with the x-axis. This will also be the angle that the normal of the line makes with the y-axis.
@@ -72,7 +72,8 @@ And fourth, we get the intersection points of the new shifted edges that are adj
 
 What we call “inflation”, James A. Storer, and John H. Reif call it “padding” in [1]. They have a better approach than ours, considering that they are not doing the approximation of inflation or padding of the corners of the obstacles. When we pad or inflate the obstacles, the edges remain edges, but the corners don’t remain corners, the turn into arcs as shown in Fig 19 of [1].
 
-![Image](dhavalc25.github.io/inflation.jpg)
+![Image](shortestpathproblem/inflation.jpg)
+
 
 **4. Build the visibility graph**
 
@@ -84,7 +85,7 @@ There are a couple of approaches to build the visibility graph. An O(n log n) ti
 
 The figure below shows the vertices that the vertices of the green polygon are connected to in the visibility graph. The adjacency list of every vertex is shown by a different color for the ease of visuals. We have only shown the connections between two polygons though, not inter polygonal connectivity. We haven’t shown the vertices being connected to the adjacent vertices of the same polygon because the colors would be overlapped.
 
-![Image](dhavalc25.github.io/12.png)
+![Image](shortestpathproblem/12.png)
 
 **5. Implement a shortest path finding algorithm in a graph**
 
@@ -98,9 +99,9 @@ After running the shortest path algorithm on the visibility graph we get a list 
 
 The figures below show some interesting outputs that we froze:
 
-![Image](dhavalc25.github.io/13.png)
+![Image](shortestpathproblem/13.png)
 
-![Image](dhavalc25.github.io/14.png)
+![Image](shortestpathproblem/14.png)
 
 ## Validations of the User Interface:
 
@@ -110,15 +111,15 @@ The following validations have been made on our User Interface to make sure that
 
 **1. Validation 1: User cannot create an obstacle of two points. The minimum number of points required to create the obstacle is atleast three.**
 
-![Image](dhavalc25.github.io/15.png)
+![Image](shortestpathproblem/15.png)
 
 **2. Validation 2: The map should contain atleast two obstacles before the user clicks the “FINISH” button.**
 
-![Image](dhavalc25.github.io/16.png)
+![Image](shortestpathproblem/16.png)
 
 **3. Validation 3: User cannot find the shortest path until all the obstacles are closed and the start and destination points have been plotted.**
 
-![Image](dhavalc25.github.io/valid3.png)
+![Image](shortestpathproblem/valid3.png)
 
 ## Limitations:
 
@@ -126,19 +127,19 @@ Although we have tried to develop an algorithm that would work in most input sce
 
 **1. Scenario 1: The obstacles contain sharp edges that are in close vicinity of each other.**
 
-![Image](dhavalc25.github.io/17.png)
+![Image](shortestpathproblem/17.png)
 
 **2. Scenario 2: The radius of the moving circular disk does not fit in the path that leads to the destination point.**
 
-![Image](dhavalc25.github.io/18.png)
+![Image](shortestpathproblem/18.png)
 
 **3. Scenario 3: The start or destination point or both the points lie within an obstacle.**
 
-![Image](dhavalc25.github.io/19.png)
+![Image](shortestpathproblem/19.png)
 
 **4. Scenario 4: The obstacle vertices are plotted in a clockwise fashion.**
 
-![Image](dhavalc25.github.io/20.png)
+![Image](shortestpathproblem/20.png)
 
 ## Future Work:
 
