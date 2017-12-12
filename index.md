@@ -117,7 +117,7 @@ Although we have tried to develop an algorithm that would work in most input sce
 
 ## References:
 
-1. [1] “Shortest Path in the Plane with Polygonal Obstacles”, James A. Storer, John H. Reif, Journal of the ACM (JACM) 5 September, 1994, pp. 982 - 1012.
+1. [1] link:https://users.cs.duke.edu/~reif/paper/movers.pdf[“Shortest Path in the Plane with Polygonal Obstacles”, James A. Storer, John H. Reif, Journal of the ACM (JACM) 5 September, 1994, pp. 982 - 1012.]
 2. [2] “Computing Shortest Paths among Curved Obstacles in the Plane”, Danny Z. Chen, Haitao Wang, ACM Transactions on Algorithms, Vol. 11(4), Article No. 26, 2015.
 3. [3] “Deriving an Obstacle-Avoiding Shortest Path in Continuous Space: A Spatial Analytic Approach”, Insu Hong, Arizona State University, May 2015.
 4. [4] “Complexity of the generalized mover’s problem”, John H. Reif, 1979.
