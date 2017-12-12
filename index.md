@@ -84,6 +84,8 @@ There are a couple of approaches to build the visibility graph. An O(n log n) ti
 
 The figure below shows the vertices that the vertices of the green polygon are connected to in the visibility graph. The adjacency list of every vertex is shown by a different color for the ease of visuals. We have only shown the connections between two polygons though, not inter polygonal connectivity. We haven’t shown the vertices being connected to the adjacent vertices of the same polygon because the colors would be overlapped.
 
+![Image](dhavalc25.github.io/12.png)
+
 **5. Implement a shortest path finding algorithm in a graph**
 
 We now have the visibility graph built that connects the vertices that the object can traverse through from a vertex. The graph is in the form of an adjacency list rather than an adjacency matrix which allows the traversals to happen in a lesser time complexity while computing the shortest path. Any shortest path algorithm starts its traversal from the start point and checks the vertices it is connected to, building its path by repeating this step in a specific manner based on the algorithm being used, until it reaches a vertex that contains the destination vertex in the list of vertices it is connected to. 
