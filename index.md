@@ -98,6 +98,10 @@ After running the shortest path algorithm on the visibility graph we get a list 
 
 The figures below show some interesting outputs that we froze:
 
+![Image](dhavalc25.github.io/13.png)
+
+![Image](dhavalc25.github.io/14.png)
+
 ## Validations of the User Interface:
 
 A user interface without validations is not easy to use because the user would not have a guide even when he operates some functions in the wrong way. In that case, the inputs could also be read wrong and would fail some module of the algorithm. 
@@ -106,9 +110,15 @@ The following validations have been made on our User Interface to make sure that
 
 **1. Validation 1: User cannot create an obstacle of two points. The minimum number of points required to create the obstacle is atleast three.**
 
+![Image](dhavalc25.github.io/15.png)
+
 **2. Validation 2: The map should contain atleast two obstacles before the user clicks the “FINISH” button.**
 
+![Image](dhavalc25.github.io/16.png)
+
 **3. Validation 3: User cannot find the shortest path until all the obstacles are closed and the start and destination points have been plotted.**
+
+![Image](dhavalc25.github.io/valid3.png)
 
 ## Limitations:
 
@@ -116,13 +126,25 @@ Although we have tried to develop an algorithm that would work in most input sce
 
 **1. Scenario 1: The obstacles contain sharp edges that are in close vicinity of each other.**
 
+![Image](dhavalc25.github.io/17.png)
+
 **2. Scenario 2: The radius of the moving circular disk does not fit in the path that leads to the destination point.**
+
+![Image](dhavalc25.github.io/18.png)
 
 **3. Scenario 3: The start or destination point or both the points lie within an obstacle.**
 
+![Image](dhavalc25.github.io/19.png)
+
 **4. Scenario 4: The obstacle vertices are plotted in a clockwise fashion.**
 
+![Image](dhavalc25.github.io/20.png)
+
 ## Future Work:
+
+Our algorithm can be further be improvised on in a number of aspects. For our stretched goals with respect to this implementation, we can firstly fix our limitation scenarios. For Scenario 1, we can revise the way we inflate our polygons. Instead of having it inflated into new vertices, we can inflate the portions close to the edges as arcs to maintain the closest approximation of the radius of the circular moving object all around the polygon. The math involved would be more complicated and we would end up having multiple vertices along the curves of the vertices that would in turn increase the computation time. For Scenario 2, we can have perpendiculars drawn from every endpoint to every other edge where the perpendicular does not intersect any intermediate edges. This is the naive approach to it, unless there exists some math that could easily solve this. For Scenario 3, we can have nothing but a validation in the User Interface that checks if the start or destination point lies inside a polygon that has been made by the user, and give a warning along with another chance of selecting the start and destination points until they seem fit. For Scenario 4, we can check the orientation in which the vertices of every polygon are plotted. If the vertices for any polygon have been plotted in the clockwise manner, modify it to be anti-clockwise before using it as an input to the algorithm. The key here is to detect the orientation of the vertices. 
+
+Another major way in which we could extend this algorithm is by allowing the moving object to be a two dimensional rectangle. The rectangle would have to check whether it fits within the space between two vertex ends or between the edges (parallel or nonparallel) of two different polygons. This would involve a huge number of computations since the object would have to be rotated with small incrementations repeated and checked for intersections with the edges of the polygons multiple times. This is not a feasible method to follow since we would not know its final computation time. 
 
 ## References:
 
