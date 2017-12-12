@@ -35,6 +35,8 @@ Once the polygons drawn pass through the previous validations, the user can choo
 
 The figure below indicates how the UI looks:
 
+![Image](dhavalc25.github.io/UI.png)
+
 **2. Compute the convex hull**
 
 The concept of convex hull explains the subset of a number of points in a Euclidean plane that envelope the rest of the points in their interior in a convex manner. It is analogous to stretching out a rubber band and snapping it around all the points such that it creates edges with the outermost points. There is a good reason why we planned on computing the convex hull before the core algorithm. In the realistic sense, if a person wants to walk past a building that is concave in shape or around it taking the shortest path, he will always have to walk along the convex hull of the building. If he walks along the concave edges of the building, the total path cost will increase.
@@ -122,5 +124,3 @@ Although we have tried to develop an algorithm that would work in most input sce
 2. [2] [“Computing Shortest Paths among Curved Obstacles in the Plane”, Danny Z. Chen, Haitao Wang, ACM Transactions on Algorithms, Vol. 11(4), Article No. 26, 2015.](https://dl.acm.org/citation.cfm?id=2660771)
 3. [3] [“Deriving an Obstacle-Avoiding Shortest Path in Continuous Space: A Spatial Analytic Approach”, Insu Hong, Arizona State University, May 2015.](https://repository.asu.edu/attachments/150616/content/Hong_asu_0010E_14943.pdf)
 4. [4] [“Complexity of the generalized mover’s problem”, John H. Reif, 1979.](https://users.cs.duke.edu/~reif/paper/movers.pdf)
-
-![Image](dhavalc25.github.io/shot1.png)
