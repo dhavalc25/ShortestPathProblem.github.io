@@ -35,7 +35,7 @@ Once the polygons drawn pass through the previous validations, the user can choo
 
 The figure below indicates how the UI looks:
 
-![Image](shortestpathproblem/111.jpg)
+![Image](111.jpg)
 
 **2. Compute the convex hull**
 
