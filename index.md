@@ -65,10 +65,14 @@ New y-intercept = old y-intercept - value 		if, x2 < x1
 
 This will add or subtract to the old y-intercept and will eventually shift the edge/line above or below with a factor of “value” along the y-axis, or with a factor of “radius” along the normal of the edge/line.
 
+![Image](dhavalc25.github.io/3.jpg)
+
 And fourth, we get the intersection points of the new shifted edges that are adjacent to each other. When we are done with finding intersection points of all the adjacent edges, we have our vertices of the inflated polygons ready. And, we do this for all obstacles in our canvas.
 ```
 
 What we call “inflation”, James A. Storer, and John H. Reif call it “padding” in [1]. They have a better approach than ours, considering that they are not doing the approximation of inflation or padding of the corners of the obstacles. When we pad or inflate the obstacles, the edges remain edges, but the corners don’t remain corners, the turn into arcs as shown in Fig 19 of [1].
+
+![Image](dhavalc25.github.io/inflation.jpg)
 
 **4. Build the visibility graph**
 
